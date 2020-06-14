@@ -15,7 +15,7 @@ namespace PasswordChecker
      Console.WriteLine ("Input a practice password");
      string password = Console.ReadLine();
 
-     int score  = 0;
+     int score  = 0; // gives a score based on which of the above variables are met using the Tools.Contains method
      if (password.Length >= minLength){
        score++;
        }
@@ -33,7 +33,7 @@ namespace PasswordChecker
        }
        switch (score)
        {
-         case 5:
+         case 5:  // checks the variable score for what it's worth after checking parameters and writes to the console a descritption of the password's strength. 
           Console.WriteLine("Your password is extremely strong");
           break;
          case 4:
